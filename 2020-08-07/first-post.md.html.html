@@ -12,7 +12,7 @@
 
         var body = document.getElementsByTagName('body')[0]
 
-        fetch('./.md').then(res => {
+        fetch('./first-post.md.html').then(res => {
             return res.text()
         }).then(text => {
             var result = md.render(text)
