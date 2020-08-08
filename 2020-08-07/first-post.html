@@ -3,25 +3,29 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel=stylesheet href=../index.css>
+    <link rel=stylesheet href=https://highlightjs.org/static/demo/styles/an-old-hope.css>
     <title>first-post</title>
 </head>
 <body>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/markdown-it/11.0.0/markdown-it.min.js'></script>
-    <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js></script>
     <script>
+        var hljs = window.hljs
         hljs.initHighlightingOnLoad();
         var md = window.markdownit({
             html : true,
             linkify : true,
             typographer: true,
             highlight: function (str, lang) {
+                console.log(str, lang)
+                console.log(hljs.highlight(lang, str).value)
                 if (lang && hljs.getLanguage(lang)) {
-                try {
-                    return hljs.highlight(lang, str).value;
-                } catch (__) {}
+                    try {
+                        return hljs.highlight(lang, str).value;
+                    } catch (__) {}
                 }
-
-                return '';
+                return ''; // use external default escaping
             }
         })
 
