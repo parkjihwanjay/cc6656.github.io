@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding : 0;
+}
+
+body{
+    height: 100vh;
+}
+
+code {
+    display: flex; 
+    align-items: center;
+
+    padding: 1rem;
+    background: rgba(210, 210, 210, 0.297);
+}
+
+header > div{
+    /* background-color: gray; */
+    /* opacity: 0.3; */
+    height: 10vh;
+    border-bottom : 1px solid gray;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > div > p{
+    /* padding-top: 30px; */
+    
+    text-align: center;   
+    color :black
+}
+
+section {
+    width: 90%;
+    margin : 0 auto;
+}
