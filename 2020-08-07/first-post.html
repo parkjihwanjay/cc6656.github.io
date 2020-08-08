@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>first-post</title>
+</head>
+<body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/markdown-it/11.0.0/markdown-it.min.js'></script>
+    <script>
+        var md = window.markdownit();
+
+        var body = document.getElementsByTagName('body')[0]
+
+        fetch('./first-post.md').then(res => {
+            return res.text()
+        }).then(text => {
+            var result = md.render(text)
+            body.innerHTML = result
+        })
+    </script>
+</body>
+</html>
