@@ -10,7 +10,7 @@
 
 passport는 node.js에서 인증을 위한 middleware입니다. passport는 오직 인증 요청에만 목적을 두고 있다고 하네
 
-요즘 OAuth를 이용한 소셜 로그인이 인기가 많아졌는데 passport는 각 service provide별로 다른 인증 요구사항들을 알고 독립적인 모듈로 인증 모듈을 제공한다고 하네... 쩝; 무슨 말인지는 실습하면서 알아보자 :smirk:
+요즘 OAuth를 이용한 소셜 로그인이 인기가 많아졌는데 passport는 각 service provide별로 다른 인증 요구사항들을 알고 독립적인 모듈로 인증 모듈을 제공한다고 하네... 쩝; 무슨 말인지는 실습하면서 알아보자 :smirk
 
 ### passport 설치
 
