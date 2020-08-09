@@ -1,0 +1,5 @@
+createPost.sh
+.DS_Store
+markdown.js
+.vscode
+.prettierrc

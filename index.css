@@ -1,16 +1,18 @@
 *{
-    margin: 0;
-    padding : 0;
+    font-size: 62.5%;
 }
-
 body{
     height: 100vh;
+    font-size: 4.5rem;
 }
 
 code {
-    display: flex; 
+    padding: 1rem;
+    background: rgba(210, 210, 210, 0.297);
+}
+pre > code {
+    display: block; 
     align-items: center;
-
     padding: 1rem;
     background: rgba(210, 210, 210, 0.297);
 }
@@ -25,14 +27,25 @@ header > div{
     justify-content: center;
 }
 
-header > div > p{
-    /* padding-top: 30px; */
-    
+header > div > h1{
     text-align: center;   
     color :black
 }
 
+blockquote{
+    border-left: 2px #2980b9 solid;
+    background-color: rgba(210, 210, 210, 0.297);
+    padding: .5rem;
+}
+blockquote p {
+    margin : 0;
+}
 section {
     width: 90%;
     margin : 0 auto;
+    color : #2c3e50
+}
+
+a{
+    display: block;
 }
