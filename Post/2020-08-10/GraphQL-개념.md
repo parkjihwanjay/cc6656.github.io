@@ -26,7 +26,7 @@
 
 **GraphQL 쿼리문**
 
-```js
+```bash
 {
 	hero{
 		name
@@ -36,7 +36,7 @@
 
 **응답 데이터**
 
-```
+```bash
 {
   "data" : {
     hero : {
