@@ -10,13 +10,38 @@ code {
     padding: 1rem;
     background: rgba(210, 210, 210, 0.297);
 }
+strong{
+    font-size: 1.3rem;
+}
+ul{
+    font-size: 1.3rem;
+}
+
+li{
+    font-size: 1.3rem;
+}
+
+p{
+    font-size : 1.3rem;
+}
+
+pre{
+    font-size : 1.3rem;
+}
+a{
+    font-size: 1.3rem;
+}
 pre > code {
     display: block; 
     align-items: center;
     padding: 1rem;
     background: rgba(210, 210, 210, 0.297);
+    font-size: 1.3rem;
+    overflow: auto;
 }
-
+pre > code > span{
+    font-size: 1.3rem;
+}
 header > div{
     /* background-color: gray; */
     /* opacity: 0.3; */
