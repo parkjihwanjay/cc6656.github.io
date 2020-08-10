@@ -3,3 +3,4 @@ createPost.sh
 markdown.js
 .vscode
 .prettierrc
+package.json
